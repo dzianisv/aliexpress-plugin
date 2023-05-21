@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "Aliexpress Utils",
+  "description": "This extension extracts delivery and good prices and prints the final price.",
+  "version": "1.0",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://aliexpress.ru/*",
+        "*://aliexpress.com/*"
+      ],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}
